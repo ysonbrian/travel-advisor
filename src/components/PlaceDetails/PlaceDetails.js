@@ -4,7 +4,6 @@ const PlaceDetails = ({ place }) => {
   return (
     <div>
       <h1>{place.name}</h1>
-      <h2>Hello</h2>
     </div>
   );
 };
