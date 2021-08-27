@@ -5,7 +5,6 @@ import { getPlacesData, getWeatherData } from './api/index';
 import Header from './components/Header/Header';
 import List from './components/List/List';
 import Map from './components/Map/Map';
-import PlaceDetails from './components/PlaceDetails/PlaceDetails';
 
 const App = () => {
   const [places, setPlaces] = useState([]);
@@ -45,6 +44,7 @@ const App = () => {
         setIsLoading(false);
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [type, bounds]);
 
   console.log(places);
